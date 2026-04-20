@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kuiz Interaktif 40 Soalan - Terengganu Kertas 1</title>
+  <style>
+    :root{
+      --bg:#f7f9fc; --card:#fff; --accent:#2b6cb0; --good:#0b7a3f; --bad:#b02a37;
+      --maxWidth:980px;
+    }
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);margin:0;padding:18px;color:#111}
+    .wrap{max-width:var(--maxWidth);margin:0 auto;background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 20px rgba(20,40,80,0.06)}
+    h1{text-align:center;margin:6px 0 2px 0;font-size:1.25rem}
+    .meta{font-size:0.9rem;color:#555;text-align:center;margin-bottom:14px}
+    .q{border:1px solid #e6eef8;background:#fbfeff;padding:12px;border-radius:8px;margin:14px 0;overflow:hidden}
+    .q h3{margin:0 0 8px 0;font-size:1rem}
+    .options{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+    .opt{display:flex;align-items:center;gap:10px;padding:10px;border-radius:8px;cursor:pointer;border:1px solid transparent}
+    .opt:hover{background:#eef7ff}
+    .opt input{transform:scale(1.05)}
+    .media { width:100%; max-width:820px; margin:8px 0; display:block; }
+    .media img, .media svg { width:100%; height:auto; display:block; border-radius:6px; }
+    .feedback{margin-top:10px;font-weight:700}
+    .correct{color:var(--good)}
+    .wrong{color:var(--bad)}
+    .hint{margin-top:8px;background:#fff8e6;padding:10px;border-radius:6px;border:1px solid #ffe7b2;color:#6a4b00;display:none}
+    .explain{margin-top:8px;color:#333;display:none}
+    .controls{display:flex;gap:10px;align-items:center;margin-top:12px}
+    button{padding:8px 12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+    button.secondary{background:#fff;color:var(--accent)}
+    .score{margin-left:auto;font-weight:700;color:var(--good)}
+    footer{margin-top:14px;font-size:0.9rem;color:#666;text-align:center}
+    @media (max-width:420px){body{padding:10px}.wrap{padding:12px}.opt{padding:8px}}
+    /* small helper for compact option labels */
+    .opt span {display:inline-block;flex:1}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Kuiz Interaktif: Terengganu Kertas 1 — 40 Soalan</h1>
+    <div class="meta">Muat turun fail ini dan buka dengan pelayar (Chrome/Safari). Pastikan folder imej <b>TERENGGANU KERTAS 1_files</b> berada dalam folder yang sama dengan fail HTML.</div>
+
+    <!-- Questions 1-40 -->
+    <!-- For each question: data-qid, options, hint, explanation. Answers are set in the JS 'answers' object. -->
+
+    <!-- Q1 -->
+    <div class="q" data-qid="1">
+      <h3>1. "Lapisan luar bumi" dan "Kaya dengan sumber mineral". Penyataan di atas merujuk kepada sistem:</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q1" value="A"><span>A. atmosfera</span></label>
+        <label class="opt"><input type="radio" name="q1" value="B"><span>B. biosfera</span></label>
+        <label class="opt"><input type="radio" name="q1" value="C"><span>C. litosfera</span></label>
+        <label class="opt"><input type="radio" name="q1" value="D"><span>D. atmosfera</span></label>
+      </div>
+      <div class="feedback" aria-live="polite"></div>
+      <div class="hint">Hint: Lapisan pepejal yang mengandungi batuan dan mineral.</div>
+      <div class="explain">Penjelasan: Litosfera ialah lapisan luar bumi yang kaya dengan sumber mineral.</div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q" data-qid="2">
+      <h3>2. Proses pemecahan batuan dalam foto di atas dapat dikaitkan dengan proses luluh hawa:</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_001.png" alt="Foto batuan" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q2" value="A"><span>A. perubahan suhu ekstrem</span></label>
+        <label class="opt"><input type="radio" name="q2" value="B"><span>B. penghabluran garam</span></label>
+        <label class="opt"><input type="radio" name="q2" value="C"><span>C. basah kering batuan</span></label>
+        <label class="opt"><input type="radio" name="q2" value="D"><span>D. tindakan ibun</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Pengembangan dan pengecutan berulang semasa basah dan kering menyebabkan retakan.</div>
+      <div class="explain">Penjelasan: Kitaran basah-kering menyebabkan tekanan mekanikal pada batu sehingga pecah.</div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q" data-qid="3">
+      <h3>3. Kombinasi manakah benar antara jenis luluh hawa dan agen yang mempengaruhinya?</h3>
+      <table style="width:100%;border-collapse:collapse;margin-top:6px">
+        <tr><th style="text-align:left">Pilihan</th><th style="text-align:left">Jenis</th><th style="text-align:left">Agen</th></tr>
+        <tr><td>A</td><td>Fizikal</td><td>Suhu yang ekstrem</td></tr>
+        <tr><td>B</td><td>Fizikal</td><td>Akar tumbuhan</td></tr>
+        <tr><td>C</td><td>Biologi</td><td>Hujan yang banyak</td></tr>
+        <tr><td>D</td><td>Kimia</td><td>Tindakan bakteria</td></tr>
+      </table>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q3" value="A"><span>A</span></label>
+        <label class="opt"><input type="radio" name="q3" value="B"><span>B</span></label>
+        <label class="opt"><input type="radio" name="q3" value="C"><span>C</span></label>
+        <label class="opt"><input type="radio" name="q3" value="D"><span>D</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Akar tumbuhan adalah agen biologi, bukan fizikal.</div>
+      <div class="explain">Penjelasan: Akar tumbuhan menyebabkan luluh hawa biologi; suhu ekstrem adalah agen fizikal.</div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q" data-qid="4">
+      <h3>4. Rajah menunjukkan magma gunung berapi. Apakah jenis batuan yang terhasil?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_002.png" alt="Magma" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q4" value="A"><span>A. Granit</span></label>
+        <label class="opt"><input type="radio" name="q4" value="B"><span>B. Gipsum</span></label>
+        <label class="opt"><input type="radio" name="q4" value="C"><span>C. Kuartzit</span></label>
+        <label class="opt"><input type="radio" name="q4" value="D"><span>D. Pasir</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Batuan yang terbentuk daripada magma yang menyejuk ialah batuan igneus.</div>
+      <div class="explain">Penjelasan: Granit ialah contoh batuan igneus yang terbentuk daripada magma.</div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q" data-qid="5">
+      <h3>5. Apakah proses yang mempengaruhi pembentukan batuan X (dalam rajah: Batuan Igneus → Batuan X → Batuan Metamorfosis)?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q5" value="A"><span>A. Penggondolan dan pemendapan</span></label>
+        <label class="opt"><input type="radio" name="q5" value="B"><span>B. Pemadatan dan penyimenan</span></label>
+        <label class="opt"><input type="radio" name="q5" value="C"><span>C. Luluh hawa dan hakisan</span></label>
+        <label class="opt"><input type="radio" name="q5" value="D"><span>D. Tekanan dan suhu yang tinggi</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Batuan X terletak antara batuan igneus dan metamorf; proses pembentukan batuan sedimen?</div>
+      <div class="explain">Penjelasan: Batuan X adalah batuan sedimen yang terbentuk melalui pemadatan dan penyimenan.</div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="q" data-qid="6">
+      <h3>6. Antara berikut, yang manakah merupakan indikator pencemaran air dari segi fizikal?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q6" value="A"><span>A. Nilai keasidan</span></label>
+        <label class="opt"><input type="radio" name="q6" value="B"><span>B. Perubahan warna</span></label>
+        <label class="opt"><input type="radio" name="q6" value="C"><span>C. Kehadiran plankton</span></label>
+        <label class="opt"><input type="radio" name="q6" value="D"><span>D. Oksigen terlarut</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Fizikal = sifat yang boleh dilihat atau diukur tanpa analisis kimia.</div>
+      <div class="explain">Penjelasan: Perubahan warna air adalah indikator fizikal pencemaran.</div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="q" data-qid="7">
+      <h3>7. Tumbuhan seperti dalam foto di atas dapat dikaitkan dengan proses:</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_004.png" alt="Tumbuhan" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q7" value="A"><span>A. luluh hawa kimia</span></label>
+        <label class="opt"><input type="radio" name="q7" value="B"><span>B. luluh hawa fizikal</span></label>
+        <label class="opt"><input type="radio" name="q7" value="C"><span>C. luluh hawa biologi</span></label>
+        <label class="opt"><input type="radio" name="q7" value="D"><span>D. luluh hawa mekanikal</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Akar tumbuhan dan organisma menyebabkan peleraian batuan.</div>
+      <div class="explain">Penjelasan: Proses ini ialah luluh hawa biologi.</div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="q" data-qid="8">
+      <h3>8. Maklumat: Pergerakan sangat laju; Membawa tanih dan puing-puing batu yang halus. Apakah jenis gerakan jisim?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q8" value="A"><span>A. Aliran lumpur</span></label>
+        <label class="opt"><input type="radio" name="q8" value="B"><span>B. Kesotan tanih</span></label>
+        <label class="opt"><input type="radio" name="q8" value="C"><span>C. Gelangsar tanah</span></label>
+        <label class="opt"><input type="radio" name="q8" value="D"><span>D. Gelongsoran tanah</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Gerakan sangat laju dan membawa bahan halus biasanya aliran lumpur.</div>
+      <div class="explain">Penjelasan: Aliran lumpur bergerak pantas dan membawa sedimen halus.</div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="q" data-qid="9">
+      <h3>9. Langkah untuk memelihara sungai dan kawasan sekitarnya: I Memasang perangkap sampah; II Kempen kesedaran; III Memantau pembakaran; IV Menarik balik lesen. Pilih yang perlu dilakukan.</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q9" value="A"><span>A. I dan II</span></label>
+        <label class="opt"><input type="radio" name="q9" value="B"><span>B. I dan IV</span></label>
+        <label class="opt"><input type="radio" name="q9" value="C"><span>C. II dan III</span></label>
+        <label class="opt"><input type="radio" name="q9" value="D"><span>D. III dan IV</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Langkah pencegahan dan pendidikan awam penting.</div>
+      <div class="explain">Penjelasan: Memasang perangkap sampah dan kempen kesedaran adalah langkah asas pemeliharaan.</div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="q" data-qid="10">
+      <h3>10. Rajah menunjukkan bentuk muka bumi pada satu peringkat aliran sungai. Proses yang mempengaruhi pembentukan bentuk tersebut?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_005.png" alt="Bentuk muka bumi sungai" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q10" value="A"><span>A. I dan II</span></label>
+        <label class="opt"><input type="radio" name="q10" value="B"><span>B. I dan IV</span></label>
+        <label class="opt"><input type="radio" name="q10" value="C"><span>C. II dan III</span></label>
+        <label class="opt"><input type="radio" name="q10" value="D"><span>D. III dan IV</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Hakisan dan pemendapan sering bekerja bersama membentuk muka bumi sungai.</div>
+      <div class="explain">Penjelasan: Hakisan (I) dan pemendapan (IV) membentuk ciri-ciri aliran sungai.</div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="q" data-qid="11">
+      <h3>11. Bagaimanakah aktiviti pembinaan bangunan memberi kesan terhadap ekosistem pinggir laut?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q11" value="A"><span>A. Aras laut meningkat</span></label>
+        <label class="opt"><input type="radio" name="q11" value="B"><span>B. Kekuatan ombak berkurang</span></label>
+        <label class="opt"><input type="radio" name="q11" value="C"><span>C. Perubahan garis pesisir pantai</span></label>
+        <label class="opt"><input type="radio" name="q11" value="D"><span>D. Habitat hidupan akuatik musnah</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Pembinaan pesisir sering mengubah garis pantai dan habitat.</div>
+      <div class="explain">Penjelasan: Pembinaan boleh menyebabkan perubahan garis pesisir dan kehilangan habitat akuatik.</div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="q" data-qid="12">
+      <h3>12. Suhu bulanan Stesen X (J:27, F:28, M:29, A:29, M:29, J:28, J:28, O:28, S:28, O:28, N:28, D:27). Berapakah julat suhu tahunan?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q12" value="A"><span>A. 1°C</span></label>
+        <label class="opt"><input type="radio" name="q12" value="B"><span>B. 2°C</span></label>
+        <label class="opt"><input type="radio" name="q12" value="C"><span>C. 27°C</span></label>
+        <label class="opt"><input type="radio" name="q12" value="D"><span>D. 29°C</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Julat = nilai maksimum − nilai minimum.</div>
+      <div class="explain">Penjelasan: Maksimum 29°C, minimum 27°C → julat 2°C.</div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="q" data-qid="13">
+      <h3>13. Rajah berkaitan alat mengukur unsur cuaca (gambar). Apakah unsur cuaca tersebut?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_007.png" alt="Alat cuaca" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q13" value="A"><span>A. Hujan</span></label>
+        <label class="opt"><input type="radio" name="q13" value="B"><span>B. Suhu</span></label>
+        <label class="opt"><input type="radio" name="q13" value="C"><span>C. Halaju angin</span></label>
+        <label class="opt"><input type="radio" name="q13" value="D"><span>D. Kelembapan udara</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Bentuk tabung atau penadah biasanya untuk mengukur hujan.</div>
+      <div class="explain">Penjelasan: Alat tersebut ialah penadah hujan (rain gauge) untuk mengukur jumlah hujan.</div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="q" data-qid="14">
+      <h3>14. Antara berikut yang manakah iklim bagi zon panas sederhana?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q14" value="A"><span>A. Iklim Steppe</span></label>
+        <label class="opt"><input type="radio" name="q14" value="B"><span>B. Iklim Siberia</span></label>
+        <label class="opt"><input type="radio" name="q14" value="C"><span>C. Iklim Tundra</span></label>
+        <label class="opt"><input type="radio" name="q14" value="D"><span>D. Iklim Khatulsitiwa</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Zon panas sederhana biasanya kering/semi-arid seperti steppe.</div>
+      <div class="explain">Penjelasan: Iklim Steppe adalah contoh iklim panas sederhana/semi-arid.</div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="q" data-qid="15">
+      <h3>15. Maklumat: Bangunan konkrit dan berkaca; Pergerakan udara terhalang; Berlaku di bandar-bandar besar. Fenomena cuaca berkaitan?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q15" value="A"><span>A. Jerebu</span></label>
+        <label class="opt"><input type="radio" name="q15" value="B"><span>B. Hujan asid</span></label>
+        <label class="opt"><input type="radio" name="q15" value="C"><span>C. Pulau haba</span></label>
+        <label class="opt"><input type="radio" name="q15" value="D"><span>D. Kesan rumah hijau</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Bandar besar dengan banyak konkrit menjadi lebih panas berbanding kawasan sekeliling.</div>
+      <div class="explain">Penjelasan: Fenomena ini dikenali sebagai pulau haba bandar (urban heat island).</div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="q" data-qid="16">
+      <h3>16. Apakah faktor yang membezakan ciri iklim Khatulistiwa dengan iklim Sejuk Sederhana Pantai Barat?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q16" value="A"><span>A. Latitud</span></label>
+        <label class="opt"><input type="radio" name="q16" value="B"><span>B. Longitud</span></label>
+        <label class="opt"><input type="radio" name="q16" value="C"><span>C. Ketinggian</span></label>
+        <label class="opt"><input type="radio" name="q16" value="D"><span>D. Bentuk muka bumi</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Khatulistiwa terletak berhampiran khatulistiwa (garis lintang rendah).</div>
+      <div class="explain">Penjelasan: Latitud (kedudukan utara/selatan) adalah faktor utama membezakan iklim.</div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="q" data-qid="17">
+      <h3>17. Berdasarkan peta, kawasan manakah mempunyai suhu sekata sepanjang tahun dan hujan sepanjang tahun?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_008.jpg" alt="Peta iklim" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q17" value="A"><span>A. Kawasan A</span></label>
+        <label class="opt"><input type="radio" name="q17" value="B"><span>B. Kawasan B</span></label>
+        <label class="opt"><input type="radio" name="q17" value="C"><span>C. Kawasan C</span></label>
+        <label class="opt"><input type="radio" name="q17" value="D"><span>D. Kawasan D</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Ciri ini sesuai untuk zon khatulistiwa (hujan sepanjang tahun).</div>
+      <div class="explain">Penjelasan: Kawasan berhampiran khatulistiwa menunjukkan suhu sekata dan hujan sepanjang tahun.</div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="q" data-qid="18">
+      <h3>18. Apakah komponen biotik dalam ekosistem?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q18" value="A"><span>A. Hujan</span></label>
+        <label class="opt"><input type="radio" name="q18" value="B"><span>B. Tanah</span></label>
+        <label class="opt"><input type="radio" name="q18" value="C"><span>C. Organik</span></label>
+        <label class="opt"><input type="radio" name="q18" value="D"><span>D. Bakteria</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Biotik = makhluk hidup dalam ekosistem.</div>
+      <div class="explain">Penjelasan: Bakteria adalah komponen biotik (organisma hidup).</div>
+    </div>
+
+    <!-- Q19 -->
+    <div class="q" data-qid="19">
+      <h3>19. Apakah persamaan ciri Hutan Hujan Tropika dan Hutan Monsun Tropika?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q19" value="A"><span>A. Lantai hutan jarang</span></label>
+        <label class="opt"><input type="radio" name="q19" value="B"><span>B. Mempunyai tiga lapisan</span></label>
+        <label class="opt"><input type="radio" name="q19" value="C"><span>C. Terdapat tumbuhan liana</span></label>
+        <label class="opt"><input type="radio" name="q19" value="D"><span>D. Pokok berakar tunjang</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Kedua-duanya mempunyai struktur lapisan (kanopi, bawah kanopi, lantai).</div>
+      <div class="explain">Penjelasan: Kedua-dua hutan biasanya mempunyai tiga lapisan tumbuhan.</div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="q" data-qid="20">
+      <h3>20. Mengapakah spesies hidupan liar dalam foto perlu dikekalkan di Malaysia?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_009.png" alt="Spesies hidupan liar" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q20" value="A"><span>A. Sumber tarikan pelancong</span></label>
+        <label class="opt"><input type="radio" name="q20" value="B"><span>B. Bertindak sebagai pengeluar</span></label>
+        <label class="opt"><input type="radio" name="q20" value="C"><span>C. Mengawal populasi hidupan herbivor</span></label>
+        <label class="opt"><input type="radio" name="q20" value="D"><span>D. Memelihara keseimbangan ekosistem</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Peranan ekologi dan keseimbangan sistem ekologi penting.</div>
+      <div class="explain">Penjelasan: Memelihara spesies membantu mengekalkan keseimbangan ekosistem.</div>
+    </div>
+
+    <!-- Q21 -->
+    <div class="q" data-qid="21">
+      <h3>21. Kombinasi benar tentang komponen ekosistem dan fungsinya?</h3>
+      <table style="width:100%;border-collapse:collapse;margin-top:6px">
+        <tr><th style="text-align:left">Pilihan</th><th style="text-align:left">Komponen</th><th style="text-align:left">Fungsi</th></tr>
+        <tr><td>A</td><td>Tumbuh-tumbuhan</td><td>Pengeluar</td></tr>
+        <tr><td>B</td><td>Bakteria</td><td>Pengguna primer</td></tr>
+        <tr><td>C</td><td>Ulat bulu</td><td>Pengguna sekunder</td></tr>
+        <tr><td>D</td><td>Harimau</td><td>Pengguna tertier</td></tr>
+      </table>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q21" value="A"><span>A</span></label>
+        <label class="opt"><input type="radio" name="q21" value="B"><span>B</span></label>
+        <label class="opt"><input type="radio" name="q21" value="C"><span>C</span></label>
+        <label class="opt"><input type="radio" name="q21" value="D"><span>D</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Bakteria biasanya pengurai, bukan pengguna primer.</div>
+      <div class="explain">Penjelasan: Tumbuhan = pengeluar; Harimau = pengguna tertier.</div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="q" data-qid="22">
+      <h3>22. Kadar kelahiran 2.35% dan kadar kematian 0.33%. Berapakah kadar pertumbuhan penduduk semula jadi?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q22" value="A"><span>A. 2.68%</span></label>
+        <label class="opt"><input type="radio" name="q22" value="B"><span>B. 2.35%</span></label>
+        <label class="opt"><input type="radio" name="q22" value="C"><span>C. 2.02%</span></label>
+        <label class="opt"><input type="radio" name="q22" value="D"><span>D. 1.05%</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Pertumbuhan semula jadi = kelahiran − kematian.</div>
+      <div class="explain">Penjelasan: 2.35% − 0.33% = 2.02%.</div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="q" data-qid="23">
+      <h3>23. Kesan proses urbanisasi terhadap alam sekitar fizikal di Malaysia ialah:</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q23" value="A"><span>A. migrasi ke bandar meningkat</span></label>
+        <label class="opt"><input type="radio" name="q23" value="B"><span>B. kesesakan lalu lintas</span></label>
+        <label class="opt"><input type="radio" name="q23" value="C"><span>C. peningkatan kadar jenayah</span></label>
+        <label class="opt"><input type="radio" name="q23" value="D"><span>D. banjir kilat</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Urbanisasi memberi tekanan kepada infrastruktur dan sistem saliran.</div>
+      <div class="explain">Penjelasan: Kesesakan lalu lintas dan banjir kilat adalah kesan biasa; pilihan utama di sini ialah kesesakan lalu lintas.</div>
+    </div>
+
+    <!-- Q24 -->
+    <div class="q" data-qid="24">
+      <h3>24. Apakah persamaan fungsi bandar-bandar Bangi dan Sintok?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q24" value="A"><span>A. Bandar Perlombongan</span></label>
+        <label class="opt"><input type="radio" name="q24" value="B"><span>B. Bandar Pertahanan</span></label>
+        <label class="opt"><input type="radio" name="q24" value="C"><span>C. Bandar Sempadan</span></label>
+        <label class="opt"><input type="radio" name="q24" value="D"><span>D. Bandar Pendidikan</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Kedua-dua bandar terkenal dengan institusi pendidikan/akademik.</div>
+      <div class="explain">Penjelasan: Bangi dan Sintok berkait rapat dengan fungsi pendidikan (universiti/instiut).</div>
+    </div>
+
+    <!-- Q25 -->
+    <div class="q" data-qid="25">
+      <h3>25. Apakah faktor ekonomi yang mempengaruhi peletakan petempatan di bandar Nilai?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q25" value="A"><span>A. Tanah pamah yang luas</span></label>
+        <label class="opt"><input type="radio" name="q25" value="B"><span>B. Kepesatan kegiatan pertanian</span></label>
+        <label class="opt"><input type="radio" name="q25" value="C"><span>C. Kemudahan asas yang lengkap</span></label>
+        <label class="opt"><input type="radio" name="q25" value="D"><span>D. Perkembangan sektor perindustrian</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Faktor ekonomi bandar moden termasuk kemudahan asas dan industri.</div>
+      <div class="explain">Penjelasan: Kemudahan asas lengkap dan perkembangan perindustrian menarik petempatan; pilihan utama: kemudahan asas.</div>
+    </div>
+
+    <!-- Q26 -->
+    <div class="q" data-qid="26">
+      <h3>26. Berdasarkan keratan akhbar: WHO amaran kematian COVID-19 meningkat di Eropah. Apakah jenis piramid penduduk yang akan terhasil?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q26" value="A"><span>A. Piramid Progresif</span></label>
+        <label class="opt"><input type="radio" name="q26" value="B"><span>B. Piramid Terganggu</span></label>
+        <label class="opt"><input type="radio" name="q26" value="C"><span>C. Piramid Peralihan</span></label>
+        <label class="opt"><input type="radio" name="q26" value="D"><span>D. Piramid Stabil</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Negara Eropah umumnya mempunyai populasi menua dan kadar kelahiran rendah.</div>
+      <div class="explain">Penjelasan: Piramid peralihan atau stabil menggambarkan populasi matang; pilihan yang sesuai: Piramid Peralihan.</div>
+    </div>
+
+    <!-- Q27 -->
+    <div class="q" data-qid="27">
+      <h3>27. Apakah kesan sosial akibat taburan penduduk padat? (pilih yang sesuai)</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q27" value="A"><span>A. Masalah setinggan</span></label>
+        <label class="opt"><input type="radio" name="q27" value="B"><span>B. Pencemaran udara</span></label>
+        <label class="opt"><input type="radio" name="q27" value="C"><span>C. Peluang pekerjaan terhad</span></label>
+        <label class="opt"><input type="radio" name="q27" value="D"><span>D. Pasaran barangan meluas</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Taburan padat sering menyebabkan tekanan perumahan dan perkhidmatan.</div>
+      <div class="explain">Penjelasan: Masalah setinggan dan pencemaran udara adalah kesan biasa; pilihan utama: masalah setinggan.</div>
+    </div>
+
+    <!-- Q28 -->
+    <div class="q" data-qid="28">
+      <h3>28. Kombinasi benar tentang aktiviti manusia dan kesannya terhadap ekosistem?</h3>
+      <table style="width:100%;border-collapse:collapse;margin-top:6px">
+        <tr><th style="text-align:left">Pilihan</th><th style="text-align:left">Aktiviti</th><th style="text-align:left">Kesan</th></tr>
+        <tr><td>A</td><td>Pembinaan pelabuhan</td><td>Kenaikan aras laut</td></tr>
+        <tr><td>B</td><td>Perlombongan petroleum</td><td>Kemusnahan taman laut</td></tr>
+        <tr><td>C</td><td>Pertanian pindah</td><td>Hakisan tanah</td></tr>
+        <tr><td>D</td><td>Penggunaan baja kimia</td><td>Kepupusan flora</td></tr>
+      </table>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q28" value="A"><span>A</span></label>
+        <label class="opt"><input type="radio" name="q28" value="B"><span>B</span></label>
+        <label class="opt"><input type="radio" name="q28" value="C"><span>C</span></label>
+        <label class="opt"><input type="radio" name="q28" value="D"><span>D</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Pertanian pindah menyebabkan hakisan; perlombongan merosakkan habitat laut.</div>
+      <div class="explain">Penjelasan: Pilihan C (pertanian pindah → hakisan tanah) adalah hubungan yang tepat.</div>
+    </div>
+
+    <!-- Q29 -->
+    <div class="q" data-qid="29">
+      <h3>29. Mengapakah kawasan berlorek dalam peta berpenduduk jarang?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_011.png" alt="Peta berpenduduk jarang" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q29" value="A"><span>A. Iklim melampau</span></label>
+        <label class="opt"><input type="radio" name="q29" value="B"><span>B. Saliran buruk</span></label>
+        <label class="opt"><input type="radio" name="q29" value="C"><span>C. Tanah tinggi</span></label>
+        <label class="opt"><input type="radio" name="q29" value="D"><span>D. Hutan tebal</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Kawasan sukar diakses atau kurang sesuai untuk pertanian biasanya jarang penduduk.</div>
+      <div class="explain">Penjelasan: Tanah tinggi dan hutan tebal sering menyebabkan kepadatan penduduk rendah; pilihan utama: tanah tinggi.</div>
+    </div>
+
+    <!-- Q30 -->
+    <div class="q" data-qid="30">
+      <h3>30. Antara berikut, yang manakah kesan terhadap persekitaran fizikal akibat kepadatan penduduk tinggi?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q30" value="A"><span>A. I dan II</span></label>
+        <label class="opt"><input type="radio" name="q30" value="B"><span>B. I dan IV</span></label>
+        <label class="opt"><input type="radio" name="q30" value="C"><span>C. II dan III</span></label>
+        <label class="opt"><input type="radio" name="q30" value="D"><span>D. III dan IV</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Kepadatan tinggi memberi tekanan kepada sumber dan kesihatan awam.</div>
+      <div class="explain">Penjelasan: Pencemaran air (I) dan sumber alam berkurang (IV) adalah kesan utama.</div>
+    </div>
+
+    <!-- Q31 -->
+    <div class="q" data-qid="31">
+      <h3>31. Sumber yang manakah tidak boleh diperbaharui?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q31" value="A"><span>A. Air</span></label>
+        <label class="opt"><input type="radio" name="q31" value="B"><span>B. Biojisim</span></label>
+        <label class="opt"><input type="radio" name="q31" value="C"><span>C. Mineral</span></label>
+        <label class="opt"><input type="radio" name="q31" value="D"><span>D. Tenaga hidrogen</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Sumber tidak boleh diperbaharui terbentuk perlahan-lahan geologi.</div>
+      <div class="explain">Penjelasan: Mineral (contoh: bijih logam) adalah sumber tidak boleh diperbaharui.</div>
+    </div>
+
+    <!-- Q32 -->
+    <div class="q" data-qid="32">
+      <h3>32. Antara berikut, yang manakah sumber tenaga biojisim?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q32" value="A"><span>A. I dan II</span></label>
+        <label class="opt"><input type="radio" name="q32" value="B"><span>B. I dan IV</span></label>
+        <label class="opt"><input type="radio" name="q32" value="C"><span>C. II dan III</span></label>
+        <label class="opt"><input type="radio" name="q32" value="D"><span>D. III dan IV</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Biojisim = bahan organik seperti hampas sawit dan sisa sampah organik.</div>
+      <div class="explain">Penjelasan: Hampas kelapa sawit (I) dan sisa sampah (IV) adalah sumber biojisim.</div>
+    </div>
+
+    <!-- Q33 -->
+    <div class="q" data-qid="33">
+      <h3>33. Kepentingan penerokaan petroleum dan gas asli kepada pembangunan ekonomi Malaysia?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q33" value="A"><span>A. Memajukan industri pelancongan</span></label>
+        <label class="opt"><input type="radio" name="q33" value="B"><span>B. Memajukan industri petrokimia</span></label>
+        <label class="opt"><input type="radio" name="q33" value="C"><span>C. Menstabilkan harga bahan api</span></label>
+        <label class="opt"><input type="radio" name="q33" value="D"><span>D. Mewujudkan kawasan pembiakan ikan</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Petroleum menyokong sektor perindustrian seperti petrokimia.</div>
+      <div class="explain">Penjelasan: Penerokaan petroleum memajukan industri petrokimia dan sektor tenaga.</div>
+    </div>
+
+    <!-- Q34 -->
+    <div class="q" data-qid="34">
+      <h3>34. Mengapakah teknologi tenaga hidrogen digunakan sebagai sumber alternatif di Jerman?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q34" value="A"><span>A. Menjimatkan kos</span></label>
+        <label class="opt"><input type="radio" name="q34" value="B"><span>B. Tenaga mesra alam</span></label>
+        <label class="opt"><input type="radio" name="q34" value="C"><span>C. Ramai tenaga buruh</span></label>
+        <label class="opt"><input type="radio" name="q34" value="D"><span>D. Banyak bahan mentah</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Tenaga hidrogen dipromosikan kerana rendah karbon apabila dihasilkan secara hijau.</div>
+      <div class="explain">Penjelasan: Tenaga hidrogen dianggap lebih mesra alam (B).</div>
+    </div>
+
+    <!-- Q35 -->
+    <div class="q" data-qid="35">
+      <h3>35. Bagaimanakah pembinaan Empangan Tiga Gaung di China menjejaskan alam sekitar?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q35" value="A"><span>A. Keluasan hutan telah merosot</span></label>
+        <label class="opt"><input type="radio" name="q35" value="B"><span>B. Kepupusan hidupan akuatik</span></label>
+        <label class="opt"><input type="radio" name="q35" value="C"><span>C. Peningkatan suhu setempat</span></label>
+        <label class="opt"><input type="radio" name="q35" value="D"><span>D. Perubahan pasang surut</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Empangan besar mengubah habitat, aliran dan kawasan hutan yang ditenggelami.</div>
+      <div class="explain">Penjelasan: Keluasan hutan merosot dan habitat akuatik terjejas; pilihan A dan B berkait, A dipilih sebagai impak utama.</div>
+    </div>
+
+    <!-- Q36 -->
+    <div class="q" data-qid="36">
+      <h3>36. Apakah langkah pengurusan sumber tenaga secara terancang bagi memelihara alam sekitar?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q36" value="A"><span>A. I dan II</span></label>
+        <label class="opt"><input type="radio" name="q36" value="B"><span>B. II dan III</span></label>
+        <label class="opt"><input type="radio" name="q36" value="C"><span>C. I dan IV</span></label>
+        <label class="opt"><input type="radio" name="q36" value="D"><span>D. III dan IV</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Menggunakan bahan api berplumbum adalah langkah yang merosakkan.</div>
+      <div class="explain">Penjelasan: Menggunakan biodiesel (I) dan R&D (IV) adalah langkah positif; jadi I dan IV.</div>
+    </div>
+
+    <!-- Q37 -->
+    <div class="q" data-qid="37">
+      <h3>37. Rajah sektor ekonomi: Apakah jenis kegiatan ekonomi yang dapat dikaitkan dengan X?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_013.png" alt="Sektor ekonomi" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q37" value="A"><span>A. Perikanan</span></label>
+        <label class="opt"><input type="radio" name="q37" value="B"><span>B. Pembalakan</span></label>
+        <label class="opt"><input type="radio" name="q37" value="C"><span>C. Pengangkutan</span></label>
+        <label class="opt"><input type="radio" name="q37" value="D"><span>D. Perlombongan</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: X berada di antara primer dan sekunder pada rajah; fikir aktiviti yang memproses hasil primer.</div>
+      <div class="explain">Penjelasan: Jika X mewakili aktiviti pemprosesan, pengangkutan atau pemprosesan boleh sesuai; (jawapan bergantung pada rajah), pilih B sebagai contoh.</div>
+    </div>
+
+    <!-- Q38 -->
+    <div class="q" data-qid="38">
+      <h3>38. Rajah berkaitan sebuah agensi kerajaan (logo). Apakah peranan agensi tersebut?</h3>
+      <div class="media"><img src="TERENGGANU KERTAS 1_files/Image_014.png" alt="Logo agensi" /></div>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q38" value="A"><span>A. Mengadakan promosi</span></label>
+        <label class="opt"><input type="radio" name="q38" value="B"><span>B. Menjana tenaga mesra alam</span></label>
+        <label class="opt"><input type="radio" name="q38" value="C"><span>C. Meluaskan pasaran tempatan</span></label>
+        <label class="opt"><input type="radio" name="q38" value="D"><span>D. Menghasilkan benih yang berkualiti</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Logo agensi biasanya berkaitan dengan promosi atau pembangunan sektor.</div>
+      <div class="explain">Penjelasan: Peranan agensi kerajaan sering melibatkan promosi dan pengembangan pasaran; pilih A atau C bergantung pada logo.</div>
+    </div>
+
+    <!-- Q39 -->
+    <div class="q" data-qid="39">
+      <h3>39. Apakah kepentingan kegiatan ekonomi kepada pembangunan negara?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q39" value="A"><span>A. I dan II</span></label>
+        <label class="opt"><input type="radio" name="q39" value="B"><span>B. I dan IV</span></label>
+        <label class="opt"><input type="radio" name="q39" value="C"><span>C. II dan III</span></label>
+        <label class="opt"><input type="radio" name="q39" value="D"><span>D. III dan IV</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Kegiatan ekonomi memajukan infrastruktur dan peluang pekerjaan serta integrasi antarabangsa.</div>
+      <div class="explain">Penjelasan: I (memajukan infrastruktur) dan II (meningkatkan peluang pekerjaan) adalah kepentingan utama.</div>
+    </div>
+
+    <!-- Q40 -->
+    <div class="q" data-qid="40">
+      <h3>40. Apakah faktor yang menggalakkan kegiatan ekopelancongan di Malaysia?</h3>
+      <div class="options">
+        <label class="opt"><input type="radio" name="q40" value="A"><span>A. Banyak tempat bersejarah</span></label>
+        <label class="opt"><input type="radio" name="q40" value="B"><span>B. Masyarakat berbilang kaum</span></label>
+        <label class="opt"><input type="radio" name="q40" value="C"><span>C. Kawasan pertanian yang subur</span></label>
+        <label class="opt"><input type="radio" name="q40" value="D"><span>D. Hutan Hujan Tropika yang luas</span></label>
+      </div>
+      <div class="feedback"></div>
+      <div class="hint">Hint: Ekopelancongan bergantung pada sumber semula jadi dan biodiversiti.</div>
+      <div class="explain">Penjelasan: Hutan Hujan Tropika yang luas menyediakan habitat semula jadi dan tarikan ekopelancongan.</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="checkAll">Semak Semua</button>
+      <button id="reset" class="secondary">Reset</button>
+      <div class="score" id="score">Skor: 0 / 40</div>
+    </div>
+
+    <footer>Nota: Pastikan folder imej <b>TERENGGANU KERTAS 1_files</b> berada dalam folder yang sama dengan fail HTML. Jika murid buka terus dari WhatsApp pratonton, minta mereka pilih "Open in browser" atau muat turun dahulu.</footer>
+  </div>
+
+  <script>
+    // Jawapan (anggaran berdasarkan kandungan dokumen)
+    const answers = {
+      "1":"C","2":"C","3":"B","4":"A","5":"B","6":"B","7":"C","8":"A","9":"A","10":"B",
+      "11":"D","12":"B","13":"A","14":"A","15":"C","16":"A","17":"D","18":"D","19":"B","20":"D",
+      "21":"A","22":"C","23":"B","24":"D","25":"C","26":"C","27":"A","28":"C","29":"C","30":"B",
+      "31":"C","32":"B","33":"B","34":"B","35":"A","36":"C","37":"B","38":"A","39":"A","40":"D"
+    };
+
+    const qs = document.querySelectorAll('.q');
+    const scoreEl = document.getElementById('score');
+    updateScore();
+
+    qs.forEach(q => {
+      const qid = q.getAttribute('data-qid');
+      q.querySelectorAll('input[type=radio]').forEach(r => {
+        r.addEventListener('change', () => showFeedback(qid));
+      });
+    });
+
+    function showFeedback(qid) {
+      const q = document.querySelector('.q[data-qid="'+qid+'"]');
+      const sel = q.querySelector('input[type=radio]:checked');
+      const fb = q.querySelector('.feedback');
+      const hint = q.querySelector('.hint');
+      const exp = q.querySelector('.explain');
+      if(!sel) return;
+      if(sel.value === answers[qid]) {
+        fb.textContent = 'Betul!';
+        fb.className = 'feedback correct';
+        if(hint) hint.style.display = 'none';
+        if(exp) exp.style.display = 'block';
+      } else {
+        fb.textContent = 'Salah. Cuba lagi atau lihat hint.';
+        fb.className = 'feedback wrong';
+        if(hint) hint.style.display = 'block';
+        if(exp) exp.style.display = 'none';
+      }
+      updateScore();
+    }
+
+    document.getElementById('checkAll').addEventListener('click', () => {
+      qs.forEach(q => {
+        const qid = q.getAttribute('data-qid');
+        const sel = q.querySelector('input[type=radio]:checked');
+        if(!sel) {
+          const fb = q.querySelector('.feedback');
+          fb.textContent = 'Belum dijawab. Lihat hint atau pilih jawapan.';
+          fb.className = 'feedback wrong';
+          const hint = q.querySelector('.hint');
+          if(hint) hint.style.display = 'block';
+          const exp = q.querySelector('.explain');
+          if(exp) exp.style.display = 'block';
+        } else {
+          showFeedback(qid);
+        }
+      });
+      updateScore(true);
+    });
+
+    document.getElementById('reset').addEventListener('click', () => {
+      qs.forEach(q => {
+        q.querySelectorAll('input[type=radio]').forEach(i => i.checked = false);
+        const fb = q.querySelector('.feedback'); fb.textContent=''; fb.className='feedback';
+        const hint = q.querySelector('.hint'); if(hint) hint.style.display='none';
+        const exp = q.querySelector('.explain'); if(exp) exp.style.display='none';
+      });
+      updateScore();
+    });
+
+    function updateScore(revealAll=false) {
+      let correct=0;
+      qs.forEach(q => {
+        const qid = q.getAttribute('data-qid');
+        const sel = q.querySelector('input[type=radio]:checked');
+        if(sel && sel.value === answers[qid]) correct++;
+      });
+      scoreEl.textContent = 'Skor: ' + correct + ' / ' + qs.length;
+    }
+  </script>
+</body>
+</html>
